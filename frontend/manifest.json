@@ -1,0 +1,53 @@
+{
+    "manifest_version": 3,
+    "name": "gemini and resume maker2",
+    "description": "api use of gemini and local to create resume and auto upload to that to linkedin and indeed",
+    "version": "1.0.2",
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "tabs",
+        "webRequest",
+        "clipboardWrite",
+        "clipboardRead",
+        "notifications",
+        "contextMenus",
+        "downloads"
+    ],
+    "host_permissions": [
+        "*://*.linkedin.com/*",
+        "*://*.indeed.com/*",
+        "http://192.168.1.11:8181/*",
+        "http://192.168.1.15:8181/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://linkedin.com/*",
+                "https://*.linkedin.com/*",
+                "https://www.linkedin.com/jobs/*",
+                "https://*.indeed.com/*",
+                "https://example.com/"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "gemini-resume-maker@your-domain.com",
+            "strict_min_version": "109.0"
+        }
+    }
+}

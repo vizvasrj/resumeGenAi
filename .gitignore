@@ -1,0 +1,17 @@
+backend/server.key
+backend/server.crt
+.env
+backend/void
+backend/postgres
+backend/static
+frontend/signed
+frontend/.amo-upload-uuid
+frontend/aaa
+frontend/aaa
+frontend/aaa
+frontend/content25Nov.js
+frontend/content.js.23
+helper.md
+limitation.txt
+my-ext.xpi
+my-ext.zip

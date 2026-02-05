@@ -1,0 +1,19 @@
+<!-- templates/layouts/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using a simple CDN for styling to make it look decent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    <!-- The title will be passed from our Go handler -->
+    <title>{{ .title }}</title>
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <!-- "content" is where our specific page templates will render their HTML -->
+        {{ template "content" . }}
+    </div>
+</body>
+</html>

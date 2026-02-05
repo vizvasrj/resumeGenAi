@@ -1,0 +1,121 @@
+@page {
+	margin: 0;
+}
+/* body */
+body {
+    background-color: #fff;
+    color: #000;
+    font: 13px "Fira Code Medium", "Myriad Pro", "Lucida Grande", Lucida, Verdana, sans-serif;
+    line-height: 1;
+}
+
+/* links */
+a:link, a:visited {
+    color: #00f;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #f60;
+    text-decoration: underline;
+}
+
+/* code */
+pre, code {
+    font-size: 11px;
+    font-family: monaco, courier, consolas, monospace;
+}
+
+pre {
+    margin: 5px 0;
+    border: 1px solid #c7cfd5;
+    background: #f1f5f9;
+    padding: 8px;
+    text-align: left;
+}
+
+hr {
+    color: #919699;
+    size: 1;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #919699;
+}
+
+/* headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Myriad Pro", "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    /* padding-bottom: 2px; */
+    border-bottom: 1px solid #919699;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+h5, h6 {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+/* paragraphs */
+p {
+    margin: 5px 0;
+}
+
+/* lists */
+ul, ol {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+/* tables */
+table {
+    width: 100%;
+    border-top: 1px solid #919699;
+    border-left: 1px solid #919699;
+    border-spacing: 0;
+}
+
+table th, table td {
+    padding: 4px;
+    font-size: 12px;
+    border-bottom: 1px solid #919699;
+    border-right: 1px solid #919699;
+}
+
+table th {
+    background: #E2E2E2;
+    font-weight: bold;
+}
+
+/* forms */
+form, button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    width: 100%;
+}

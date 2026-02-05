@@ -1,0 +1,16 @@
+<!-- templates/dashboard.html -->
+{{ template "base" . }}
+
+{{ define "content" }}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Welcome to the Dashboard, {{ .username }}!</h1>
+                <p class="card-text">This is your secure area. You have successfully logged in.</p>
+                <a href="/login" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
